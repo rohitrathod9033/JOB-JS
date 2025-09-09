@@ -23,6 +23,35 @@ console.log(a<b);
      OPRATOR PRECEDENCE
 (),  **,  * / %,  + -
 
+
+
+     Statement
+     
+let string = prompt("Enter String Here");
+
+if(string[0]==='a' && string.length>3) {
+    console.log("Good String")
+} else {
+    console.log("Bad String")
+}
+
+
+String Method
+
+1. trim
+2. toUpper, toLowwer
+3.indexOf
+let string = "Rohit Rathod"
+console.log(string.indexOf(" "))
+
+4.slice
+let string = "Im Rohit Rathod";
+console.log(string.slice(2,6))        [2,5]
+
+5.repeat
+console.log(string.repeat(5))
+
+
 */
 
 // let Student = {
@@ -33,3 +62,18 @@ console.log(a<b);
 // }
 // let fullName = Student.name1 +" " + Student.name2;
 // console.log(fullName);
+
+// let start= ['january', 'july', 'march', 'august'];
+
+let randomNames = [
+  "Rohit",
+  "Priya",
+  "Aman",
+  "Neha",
+  "Arjun",
+  "Simran",
+  "Karan",
+  "Isha",
+  "Rahul",
+  "Ananya",
+];
