@@ -65,15 +65,6 @@ console.log(string.repeat(5))
 
 // let start= ['january', 'july', 'march', 'august'];
 
-let randomNames = [
-  "Rohit",
-  "Priya",
-  "Aman",
-  "Neha",
-  "Arjun",
-  "Simran",
-  "Karan",
-  "Isha",
-  "Rahul",
-  "Ananya",
-];
+let num = [23, 78, 12, 45, 99, 6, 54, 32, 11, 70]
+console.log(num.sort())
+console.log(num.sort().reverse())
