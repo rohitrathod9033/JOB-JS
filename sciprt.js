@@ -108,8 +108,48 @@ console.log(car)
 console.log(cars)
 
 
+             // Array Looping
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+console.log("___________This is For Loop")
+for(let i=0; i<=fruits.length; i++ ){
+    console.log(fruits[i])
+}
+
+console.log("___________This is For-Of Loop")
+for(fruit of fruits) {
+    console.log(fruit)
+}
 
 
+
+           //Looping Diffrence...
+
+let names = ["Rohit", "Aman", "Priya", "Sneha", "Kunal", "Meera"];
+
+for(namee of names) {
+    console.log(namee)
+}
+console.log("_____________________________________________")
+
+for(let i=0; i<=names.length; i++) {
+    console.log(names[i])
+}
+console.log("_____________________________________________")
+
+names.forEach(function(index, name) {
+    console.log(name, index)
+})
+console.log("_____________________________________________")
+
+for(nam in names) {
+    console.log(nam, names[nam])
+}
 */
 
+let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes", "Pineapple"];
 
+let string = fruits.toString();
+let strings = fruits.join();
+console.log(string)
+console.log(strings)
