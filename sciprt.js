@@ -147,6 +147,7 @@ for(nam in names) {
 }
 */
 
-let chars = "3456789";
-let num = Number(chars);
-console.log(num)
+let chars = 3456789;
+// let num = Number(chars);
+// console.log(num)
+console.log(chars.split(""));
