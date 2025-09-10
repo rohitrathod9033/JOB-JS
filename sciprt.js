@@ -98,5 +98,18 @@ console.log(typeof(b))
 console.log(a==b)
 console.log(a===b)
 
+
+
+
+let car = ["Toyota", "Fotuner", "BMW", "Audi"];
+let cars = new Array("Toyota", "Fotuner", "BMW", "Audi");
+
+console.log(car)
+console.log(cars)
+
+
+
+
 */
+
 
