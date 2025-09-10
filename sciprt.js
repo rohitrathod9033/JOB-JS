@@ -147,9 +147,6 @@ for(nam in names) {
 }
 */
 
-let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes", "Pineapple"];
-
-let string = fruits.toString();
-let strings = fruits.join();
-console.log(string)
-console.log(strings)
+let chars = "3456789";
+let num = Number(chars);
+console.log(num)
