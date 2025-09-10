@@ -11,7 +11,7 @@ console.log(typeof(a));
 let a = 0/0;
 console.log(a);
 
-         OPRATOR : 
+         //OPRATOR :
 UNICODE --> har number ko ak number assign hota haiii A.B,C == 65,66,67
 'a'>'A' = true
 let a = 'a';
@@ -20,18 +20,18 @@ let b  = 'A';
 console.log(a>b);
 console.log(a<b);
 
-     OPRATOR PRECEDENCE
+      //OPRATOR PRECEDENCE
 (),  **,  * / %,  + -
 
 
 
-     Statement
-     
+         //Statement
+
 let string = prompt("Enter String Here");
 
 if(string[0]==='a' && string.length>3) {
     console.log("Good String")
-} else {
+    } else {
     console.log("Bad String")
 }
 
@@ -51,20 +51,52 @@ console.log(string.slice(2,6))        [2,5]
 5.repeat
 console.log(string.repeat(5))
 
+let string = "HELLO";
+let array = string.split("").reverse().join()
+console.log(array)
+
+let Student = {
+    name1 : "Rohit",
+    name2 : "Rathod",
+    age : 22,
+    course : "MCA"
+}
+let fullName = Student.name1 +" " + Student.name2;
+console.log(fullName);
+
+let start= ['january', 'july', 'march', 'august'];
+
+         //Object function constructor
+function marks_list(Maths, English, Science, Geo, Polity) {
+    this.Maths = Maths;
+    this.English = English;
+    this.Science = Science;
+    this.Geo = Geo;
+    this.Polity = Polity;
+}
+
+let Rohit = new marks_list(12,12,12,12,12)
+let Vishal = new marks_list(12,12,12,12,12)
+let RohiRahult = new marks_list(12,12,12,12,12)
+
+console.log(RohiRahult)
+console.log(Rohit)
+console.log(Vishal)
+
+
+
+        // String
+let a = "ROhit"
+
+        // String constructor object
+let b = new String("ROhit");
+
+console.log(a)
+console.log(b)
+console.log(typeof(a))
+console.log(typeof(b))
+console.log(a==b)
+console.log(a===b)
 
 */
 
-// let Student = {
-//     name1 : "Rohit",
-//     name2 : "Rathod",
-//     age : 22,
-//     course : "MCA"
-// }
-// let fullName = Student.name1 +" " + Student.name2;
-// console.log(fullName);
-
-// let start= ['january', 'july', 'march', 'august'];
-
-let num = [23, 78, 12, 45, 99, 6, 54, 32, 11, 70]
-console.log(num.sort())
-console.log(num.sort().reverse())
