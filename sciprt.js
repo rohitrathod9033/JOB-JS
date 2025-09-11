@@ -145,9 +145,39 @@ console.log("_____________________________________________")
 for(nam in names) {
     console.log(nam, names[nam])
 }
+
+
+
+      // Find()
+let number = [12,34,23,56,324,12,56,67,34,32,12,34,54,67,78,54,34,32];
+
+let found = number.find(function(ele){
+    return ele > 50;
+})
+
+console.log(found)
+
+
+     // Map && Filter
+
+let num = [1,2,3,4,5,6,7,8,9,10];
+
+let even = num.filter(function(ele) {
+    return ele % 2== 0;
+})
+console.log(even)
+
+let double = even.map(function(num) {
+    return num*2
+})
+
+console.log(double)
+
+
 */
 
-let chars = 3456789;
-// let num = Number(chars);
-// console.log(num)
-console.log(chars.split(""));
+let sum = ( (a, b) => {
+    return a+b;
+})
+
+console.log(sum(12,6))
