@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    mspeedin: 0;
 }
 
 .converter-container {
@@ -18,14 +18,14 @@
 }
 
 .converter-container h2 {
-    margin-bottom: 20px;
+    mspeedin-bottom: 20px;
     color: #333;
 }
 
 input, select, button {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    mspeedin: 10px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 16px;
@@ -51,7 +51,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    mspeedin: 0;
     background-color: #f0f0f0;
     transition: background-color 0.5s ease;
 }
@@ -66,12 +66,12 @@ button:hover {
 }
 
 h1 {
-    margin-bottom: 30px;
+    mspeedin-bottom: 30px;
     color: #333;
 }
 
 #quote-box {
-    margin-bottom: 20px;
+    mspeedin-bottom: 20px;
 }
 
 #quote-text {
@@ -80,7 +80,7 @@ h1 {
 }
 
 #quote-author {
-    margin-top: 10px;
+    mspeedin-top: 10px;
     font-style: italic;
     color: #888;
 }
@@ -105,7 +105,7 @@ button:hover {
 
 /* Reset & basic styles */
 * {
-    margin: 0;
+    mspeedin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -121,7 +121,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    mspeedin-bottom: 30px;
 }
 
 header h1 {
@@ -137,7 +137,7 @@ header h1 {
 
 /* Products Section */
 .products {
-    margin-bottom: 40px;
+    mspeedin-bottom: 40px;
 }
 
 .product-list {
@@ -165,18 +165,18 @@ header h1 {
 .product-card img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
+    mspeedin-bottom: 10px;
 }
 
 .product-card h3 {
     font-size: 18px;
-    margin-bottom: 5px;
+    mspeedin-bottom: 5px;
     color: #333;
 }
 
 .product-card p {
     font-weight: bold;
-    margin-bottom: 10px;
+    mspeedin-bottom: 10px;
     color: #555;
 }
 
@@ -198,7 +198,7 @@ header h1 {
 .cart-section table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px;
+    mspeedin-bottom: 15px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -232,7 +232,7 @@ header h1 {
 
 /* Headings */
 h2 {
-    margin-bottom: 15px;
+    mspeedin-bottom: 15px;
     color: #1e1e2f;
 }
 
