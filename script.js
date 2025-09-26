@@ -725,3 +725,18 @@ Q = 5
 
 
 
+// let student = {
+//     Name : "Rohit",
+//     age : 22,
+//     course : "MCA"
+// }
+// let studen2 = {
+//     Surname : "Shyam",
+//     ageee : 22,
+//     courses : "BCA"
+// }
+
+// let obj3 = Object.assign({}, studen2, student)
+// console.log(obj3)
+
+
