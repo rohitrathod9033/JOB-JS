@@ -16,7 +16,7 @@ btn.addEventListener("click", async function() {
     let list_clg = show(college)
 
     let list = ul.innerHTML = `<li>${list_clg}</li>1;
-    con
+    console.log(list)
 })
 
 function show(name) {
