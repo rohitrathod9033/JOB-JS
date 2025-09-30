@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--  Currency Converter ---------------    ---------------------------------->
+
+    <!-- <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <input type="number" placeholder="Enter amount">
+        
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+        
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+        
+        <button id="convertBtn">Convert</button>
+    </div> -->
+
+
+    <h1>Our Products 🛍️</h1>
+    <h2>Total :</h2>
+    <div id="products">
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.JQslt4KWntBDjohPD9fo5QHaJQ?pid=Api&P=0&h=180" alt="Product 1">
+            <h2>Classic T-Shirt</h2>
+            <p>Price: ₹1500</p>
+            <button class="add-to-cart-btn" data-name="Classic T-Shirt" data-price="1500">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.H_-pmlw3jf9zenczLTgaKAHaHa?pid=Api&P=0&w=300&h=300" alt="Product 2">
+            <h2>Cool Jeans</h2>
+            <p>Price: ₹450</p>
+            <button class="add-to-cart-btn" data-name="Cool Jeans" data-price="450">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://static.vecteezy.com/system/resources/previews/015/158/650/original/dress-icon-logo-design-template-vector.jpg" alt="Product 3">
+            <h2>Black Dress</h2>
+            <p>Price: ₹700</p>
+            <button class="add-to-cart-btn" data-name="Black Dress" data-price="700">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://img.freepik.com/premium-photo/drawing-wedding-dress-with-flowers-it_899870-5365.jpg?w=2000" alt="Product 3">
+            <h2>White Dress</h2>
+            <p>Price: ₹1000</p>
+            <button class="add-to-cart-btn" data-name="White Dress" data-price="1000">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://www.beyours.in/cdn/shop/files/black-classic-shirt.jpg?v=1744815740&width=1000" alt="Product 3">
+            <h2>Black Shirt</h2>
+            <p>Price: ₹1200</p>
+            <button class="add-to-cart-btn" data-name="Black Shirt" data-price="1200">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/21/db/67/21db67fc7a34db23e34b118abe03f2cf.jpg" alt="Product 3">
+            <h2>Pink Dress</h2>
+            <p>Price: ₹900</p>
+            <button class="add-to-cart-btn" data-name="Pink Dress" data-price="900">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>Shopping Cart 🛒</h1>
+<div id="cart">
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price (₹)</th>
+                <th>Quantity</th>
+                <th>Subtotal (₹)</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+
+        </tbody>
+    </table>
+    <p id="cart-total">Total: ₹0.00</p>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>
