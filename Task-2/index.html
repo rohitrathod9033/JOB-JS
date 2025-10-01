@@ -4,27 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Player Dice Game</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <h1>Dice Game 🎲</h1>
+    <h1>Dice Game &#x1F3B2</h1>
 
-    <div class="dice-container">
-        <div>
-            <p>Player 1</p>
-            <div id="dice1" class="dice"></div>
-            <button>Roll Dice</button>
+    <div class="game-container">
+        <div class="player">
+            <h2 id="player1">Player 1</h2>
+            <div class="dice" id="dice1"><span id="showDice1">&#x1F3B2</span></div>
+            <button id="roll1" onclick=`${rollDice(1)}`>Roll Dice</button>
         </div>
-        <div>
-            <p>Player 2</p>
-            <div id="dice2" class="dice"></div>
-            <button>Roll Dice</button>
+
+        <div class="player">
+            <h2 id="player2">Player 2</h2>
+            <div class="dice" id="dice2"><span id="showDice2">&#x1F3B2</span></div>
+            <button id="roll2" onclick=`${rollDice(2)}`>Roll Dice</button>
         </div>
     </div>
 
-    <p class="result" id="winner"></p>
+
+    <h2 id="result"></h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Player 1</th>
+                <th>Player 2</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody id="row">
+
+        </tbody>
+    </table>
+
+    <p id="final"></p>
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <script src="script.js"></script>
+
 </html>

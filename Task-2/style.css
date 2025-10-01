@@ -1,79 +1,113 @@
-/* ------------------- Body ------------------- */
+/* General Body and Font Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-/* ------------------- Heading ------------------- */
-h1 {
-    margin-bottom: 20px;
+    background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
 }
 
-/* ------------------- Dice Container ------------------- */
-.dice-container {
+h1, h2 {
+    color: #444;
+}
+
+/* Game Container using Flexbox */
+.game-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 40px; /* Provides space between the player sections */
     margin-bottom: 20px;
 }
 
-/* ------------------- Dice Panel ------------------- */
+/* Player Card Styling */
+.player {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
 
-
-/* ------------------- Dice ------------------- */
+/* Dice Visuals */
 .dice {
-    width: 80px;
-    height: 80px;
-    margin: 10px auto;
-    background: #ddd;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid #e0e0e0;
     border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    transition: background-color 0.2s;
+    align-items: center;
+    background-color: #fafafa;
 }
 
-/* Dice roll animation */
-.dice.roll {
-    animation: shake 0.5s;
+.dice span {
+    font-size: 64px; /* Makes the emoji larger */
+    line-height: 1;
 }
 
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-}
-
-/* ------------------- Buttons ------------------- */
+/* Button Styling */
 button {
-    padding: 8px 15px;
-    border: none;
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
-    border-radius: 5px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
-/* ------------------- Result Text ------------------- */
-.result {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ff5722;
-    opacity: 0;
-    transition: opacity 0.3s;
+button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
 }
 
-.result.show {
-    opacity: 1;
+/* Result Heading */
+#result {
+    font-size: 1.8em;
+    color: #d9534f; /* A reddish color to stand out */
+    height: 40px; /* Prevents layout shift when text appears */
+    margin: 20px 0;
+}
+
+/* History Table Styling */
+table {
+    width: 60%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-collapse: collapse; /* Merges borders */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: #343a40; /* Dark header */
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa; /* Zebra-striping for readability */
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
+
+#final {
+    color: green;
+    font-size: 3rem;
 }
